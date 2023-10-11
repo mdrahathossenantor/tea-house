@@ -1,31 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tea House</title>
 
-    <!-- DaisyUI with tailwindcss -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+      <!-- font awesome -->
+      <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
 
-  <!-- custom tailwind styles -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            orange: ""
+      <!-- DaisyUI with tailwindcss -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <!-- custom tailwind styles -->
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                color: ""
+              }
+            }
           }
         }
-      }
-    }
-  </script>
+      </script>
 
-  <!-- internal css -->
-  <style>
-  </style>
-</head>
-<body>
-</body>
+    <!-- internal css -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+      
+      .font-manrope {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <!-- banner -->
+      <section class="lg:px-5 md:px-5 md:mt-10">
+        <div class="flex items-center md:flex-col">
+          <div class="2xl:w-1/2 xl:w-1/2 lg:w-1/2">
+            <h1 class="2xl:text-7xl xl:text-7xl lg:text-6xl md:text-6xl font-extrabold">It's good tea time at The Tea House</h1>
+            <p class="py-4 font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+
+          <div class="2xl:w-1/2 xl:w-1/2 lg:w-1/2 relative">
+            <div class="flex items-center justify-end">
+              <img src="./images/banner.png" alt="banner-image" class="inline-block 2xl:w-10/12 xl:w-10/12 lg:w-11/12">
+            </div>
+
+            <div class="flex items-center gap-3 p-2 bg-white shadow-lg rounded-lg 2xl:w-4/12 xl:w-5/12 lg:w-5/12 md:w-4/12 absolute bottom-0 right-1/3 md:left-36">
+              <i class="fa-solid fa-star 2xl:text-3xl xl:text-3xl lg:text-2xl md:text-2xl text-amber-500"></i>
+              <div>
+                <h3 class="2xl:text-4xl xl:text-3xl lg:text-2xl md:text-3xl font-bold">5.00</h3>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
 </html>
